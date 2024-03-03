@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 640px) {
-  .RiMenu3Fill {
-    display: hidden;
+  .Navbar .RiMenu3Fill {
+    display: none;
   }
 }
