@@ -28,7 +28,7 @@ const Navbar = () => {
         className="Navbar sticky top-0 z-[9999] flex w-full items-center justify-between px-12 py-4 backdrop-blur-sm"
       >
         <Logo />
-        <div className="flex gap-6">
+        <motion.div whileHover={{ opacity: 0 }} className="flex gap-6">
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
             (e, i) => (
               <a
@@ -39,7 +39,7 @@ const Navbar = () => {
               </a>
             ),
           )}
-        </div>
+        </motion.div>
       </motion.div>
     </>
   );
