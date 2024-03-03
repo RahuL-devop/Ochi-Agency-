@@ -29,7 +29,7 @@ const Navbar = () => {
         className="Navbar sticky top-0 z-[9999] flex  w-full  items-center justify-between overflow-hidden    px-4 py-2 backdrop-blur-sm md:px-12 md:py-4"
       >
         <Logo />
-        <RiMenu3Fill className="cursor-pointer text-[6vw]" />
+        <RiMenu3Fill className="block cursor-pointer  text-[6vw] md:block" />
         <motion.div className="hidden gap-8 md:flex">
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
             (e, i) => (
