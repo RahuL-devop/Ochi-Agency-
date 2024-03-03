@@ -25,7 +25,7 @@ const Navbar = () => {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="Navbar sticky top-0 z-[9999] flex w-full items-center justify-between px-12 py-4 "
+        className="Navbar sticky top-0 z-[9999] flex w-full items-center justify-between px-12 py-4 backdrop-blur-sm"
       >
         <Logo />
         <div className="flex gap-6 ">
