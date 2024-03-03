@@ -5,7 +5,7 @@ import Logo from "../assets/Loogo";
 const Navbar = () => {
   return (
     <>
-      <div className="Navbar fixed z-[9999]  flex w-full items-center justify-between px-12 py-4">
+      <div className="Navbar  z-[9999] flex w-full items-center justify-between px-12 py-4">
         <Logo />
         <div className="flex gap-6">
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
