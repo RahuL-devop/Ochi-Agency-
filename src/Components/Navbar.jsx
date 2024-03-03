@@ -10,7 +10,7 @@ const Navbar = () => {
   useMotionValueEvent(scrollY, "change", (latestValue) => {
     const preiousValue = scrollY.getPrevious();
     // console.log("latestValue :-", latestValue, "preiousValue:-", preiousValue);
-    if (latestValue > preiousValue ) {
+    if (latestValue > preiousValue) {
       setHidden(true);
     } else {
       setHidden(false);
@@ -25,10 +25,10 @@ const Navbar = () => {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="Navbar sticky top-0 z-[9999] flex w-full items-center justify-between px-12 py-4"
+        className="Navbar sticky top-0 z-[9999] flex w-full items-center justify-between px-12 py-4 "
       >
         <Logo />
-        <div className="flex gap-6">
+        <div className="flex gap-6 ">
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
             (e, i) => (
               <a
