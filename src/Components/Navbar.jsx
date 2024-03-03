@@ -38,9 +38,7 @@ const Navbar = () => {
                     key={i}
                   >
                     {e}
-                  </motion.a>
-
-                   
+                  </motion.a>{" "}
                 </motion.div>
               </>
             ),
