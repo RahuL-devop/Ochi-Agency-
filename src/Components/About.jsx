@@ -44,7 +44,7 @@ const About = () => {
       </div>
       <div className="mt-[6vw] w-full border-t-[1px] border-[#939f6e]"></div>
       <div className="Approch flex flex-col gap-[20vw] px-4 py-5 md:flex-row md:px-12">
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <h1 className='font-["Neue_Montreal"] text-[4vw] font-[500] text-[#212121]'>
             Our approach:
           </h1>
@@ -53,7 +53,7 @@ const About = () => {
             <span className="block w-2 h-2 bg-white rounded-full"></span>
           </button>
         </div>
-        <div className="h-[50vh] w-1/2 rounded-3xl bg-[#608a4f]"></div>
+        <div className="h-[50vh] rounded-3xl bg-[#608a4f] md:w-1/2"></div>
       </div>
     </div>
   );
