@@ -33,7 +33,7 @@ const Navbar = () => {
             (e, i) => (
               <motion.a
                 whileHover={{}}
-                className={`neue cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
+                className={`Nav__link neue cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
                 key={i}
               >
                 {e}

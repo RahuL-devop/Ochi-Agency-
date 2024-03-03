@@ -17,3 +17,12 @@
   background-color: #cdea68;
   border-radius: 8px;
 }
+.Nav__link::after {
+  content: "";
+  position: relative;
+  offset: 0;
+
+  height: 0.05em;
+
+  background: currentColor;
+}
