@@ -10,7 +10,7 @@ const Navbar = () => {
   useMotionValueEvent(scrollY, "change", (latestValue) => {
     const preiousValue = scrollY.getPrevious();
     // console.log("latestValue :-", latestValue, "preiousValue:-", preiousValue);
-    if (latestValue > preiousValue && latest > 10) {
+    if (latestValue > preiousValue ) {
       setHidden(true);
     } else {
       setHidden(false);
