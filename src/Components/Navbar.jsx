@@ -32,7 +32,7 @@ const Navbar = () => {
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
             (e, i) => (
               <>
-                <div className="relative">
+                <div key={i} className="relative">
                   <motion.a
                     className={`Nav__link neue block cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
                     key={i}
