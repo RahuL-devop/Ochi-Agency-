@@ -34,8 +34,4 @@
   transform: scaleX(1);
 }
 
-.Nav__linkk:hover .Nav__link {
-  transform: translate(0);
-  transition-duration: 0.5s;
-  transition-property: transform;
-}
+.Nav__link
