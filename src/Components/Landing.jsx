@@ -34,7 +34,7 @@ const Landing = () => {
             );
           })}
         </div>
-        <div className="thin_line mt-5 flex items-center justify-between border-t-[1px] border-zinc-800 px-12 py-4 md:mt-[4rem]">
+        <div className="thin_line mt-5 flex flex-col items-center  justify-between border-t-[1px] border-zinc-800 px-12 py-4 md:mt-[4rem] md:flex-row">
           {[
             "For public and private companies",
             "From the first pitch to IPO",
@@ -42,17 +42,17 @@ const Landing = () => {
             return (
               <p
                 key={i}
-                className="font-light leading-none tracking-tight  text-md"
+                className="mt-5 font-light leading-none tracking-tight text-md"
               >
                 {e}
               </p>
             );
           })}
-          <div className="flex items-center justify-center gap-2 start">
+          <div className="flex items-center justify-center gap-2 mt-5 start">
             <div className="rounded-full border-[2px] border-zinc-500 px-5 py-1 text-sm font-light uppercase">
               start the Project
             </div>
-            <div className="round flex h-5 w-5 items-center justify-center rounded-full border-[2px] border-zinc-600 p-4 text-sm">
+            <div className="round flex h-5 w-5  items-center justify-center rounded-full border-[2px] border-zinc-600 p-4 text-sm">
               <span className="rotate-[45deg]">
                 <FaLongArrowAltUp />
               </span>
