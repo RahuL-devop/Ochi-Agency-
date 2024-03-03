@@ -20,14 +20,16 @@
 .Nav__link::after {
   content: "";
   position: relative;
-  offset: 0;
-  display: block;
-  height: 0.05em;
   background: #d9d9d9;
-  /* transform: scale(0); */
-  transition-property: transform;
-
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.05em;
+  transform: scale(0);
+  will-change: transform;
   transition-duration: 0.5s;
+  transform-origin: 100% 100%;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
