@@ -8,9 +8,14 @@ const Navbar = () => {
 
   const [hidden, setHidden] = useState(false);
 
-  useMotionValueEvent(scrollY, "change", (lat) => {
-    const pre = scrollY.getPrevious();
-    console.log("lat :-", lat, "pre:-", pre);
+  useMotionValueEvent(scrollY, "change", (latestValue) => {
+    const preiousValue = scrollY.getPrevious();
+    console.log("latestValue :-", latestValue, "preiousValue:-", preiousValue);
+    if (latestValue > preiousValue) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
   });
   return (
     <>
