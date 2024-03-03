@@ -33,13 +33,4 @@
   /* Apply transform scale when hovering */
   transform: scaleX(1);
 }
-
-.Nav__linkk {
-  position: absolute;
-  top: 0;
-  transform: translateY(150%);
-}
-
-.Nav__link:hover ~ .Nav__linkk {
-  transform: translateY(0);
-}
+ 

@@ -40,12 +40,7 @@ const Navbar = () => {
                     {e}
                   </motion.a>
 
-                  <motion.a
-                    className={`Nav__linkk neue absolute   cursor-pointer text-[16px] font-light leading-[12px]  ${i === 4 && "ml-[12rem]"}`}
-                    key={i}
-                  >
-                    {e}
-                  </motion.a>
+                   
                 </motion.div>
               </>
             ),
