@@ -6,3 +6,8 @@
   font-family: 'Founders Grotesk X Condensed';
   src: url('../public/Founders_Grotesk/FoundersGroteskCond-Lt.otf');
 }
+
+
+::-webkit-scrollbar{
+  
+}
