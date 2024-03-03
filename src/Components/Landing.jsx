@@ -10,11 +10,11 @@ const Landing = () => {
         data-scroll-speed="-0.3"
         className="h-screen w-full bg-zinc-900 py-[1px]"
       >
-        <div className=" textStructure mt-[10.5rem] px-12">
+        <div className=" textStructure mt-10 px-4 md:mt-[10.5rem]  md:px-12">
           {["We create", "eye-opening", "Presentations"].map((e, i) => {
             return (
-              <div key={i} className="masker overflow-hidden">
-                <div className="flex w-fit items-end">
+              <div key={i} className="overflow-hidden masker">
+                <div className="flex items-end w-fit">
                   {i === 1 && (
                     <motion.div
                       initial={{ width: 0 }}
@@ -25,7 +25,7 @@ const Landing = () => {
                   )}
                   <h1
                     key={i}
-                    className="-mb-[3vw] font-['Founders_Grotesk_X'] text-[10.5vw] font-[600] uppercase leading-[1.05]"
+                    className="-mb-[3vw] font-['Founders_Grotesk_X'] text-[15vw] font-[600] uppercase leading-[1.05] md:text-[10.5vw]"
                   >
                     {e}
                   </h1>
@@ -42,13 +42,13 @@ const Landing = () => {
             return (
               <p
                 key={i}
-                className="text-md font-light leading-none tracking-tight"
+                className="font-light leading-none tracking-tight text-md"
               >
                 {e}
               </p>
             );
           })}
-          <div className="start flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-2 start">
             <div className="rounded-full border-[2px] border-zinc-500 px-5 py-1 text-sm font-light uppercase">
               start the Project
             </div>
