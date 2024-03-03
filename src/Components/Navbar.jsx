@@ -21,9 +21,9 @@ const Navbar = () => {
   const toogleMenu = () => {
     setOpen((prev) => !prev);
     if (open) {
-      console.log("open");
+      console.log("close");
     } else {
-      console.log("clis");
+      console.log("open");
     }
   };
 
@@ -45,11 +45,11 @@ const Navbar = () => {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="Navbar sticky top-0 z-[9999] flex  w-full items-center justify-between overflow-hidden px-4 py-2 backdrop-blur-sm md:px-12 md:py-4"
+        className="sticky top-0 flex justify-between w-full px-4 py-2 overflow-hidden itefirst-line:ms-center Navbar backdrop-blur-sm md:px-12 md:py-4"
       >
         <Logo />
         <Menu
-          className="Hamburgur block cursor-pointer text-[6vw] sm:hidden"
+          className="Hamburgur z-[9999] block cursor-pointer text-[6vw] sm:hidden"
           onClick={() => toogleMenu()}
         />
         <motion.div className="hidden gap-8 lg:flex">
@@ -69,7 +69,9 @@ const Navbar = () => {
 
         {
           /* Mobile View */
-          open && <div className="w-full h-screen bg-red-500 mobileNav "></div>
+          open && (
+            <div className="w-full h-screen px-2 bg-red-500  mobileNav"></div>
+          )
         }
       </motion.div>
     </>

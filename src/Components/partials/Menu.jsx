@@ -1,8 +1,13 @@
 import { motion, MotionConfig } from "framer-motion";
 import React, { useState } from "react";
 
-const AnimatedHam = () => {
+const Menu = ({ onClick }) => {
   const [active, setActive] = useState(false);
+
+  const handleButtonClick = () => {
+    onClick(); // Call the onClick function passed from the parent component
+    setActive((prev) => !prev); // Toggle the active state
+  };
 
   return (
     <MotionConfig
@@ -13,7 +18,7 @@ const AnimatedHam = () => {
     >
       <motion.button
         initial={false}
-        onClick={() => setActive((pev) => !pev)}
+        onClick={handleButtonClick}
         className="relative w-10 h-10 transition-colors border-none rounded-full outline-none"
         animate={active ? "open" : "closed"}
       >
@@ -24,7 +29,7 @@ const AnimatedHam = () => {
             x: "-50%",
             y: "-50%",
           }}
-          className=" first absolute h-[1px] w-[25px] bg-white"
+          className=" first absolute h-[1px] w-[25px] bg-white "
           variants={{
             open: {
               rotate: ["0deg", "0deg", "45deg"],
@@ -60,4 +65,4 @@ const AnimatedHam = () => {
   );
 };
 
-export default AnimatedHam;
+export default Menu;
