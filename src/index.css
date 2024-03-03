@@ -21,8 +21,7 @@
   content: "";
   position: relative;
   offset: 0;
-
   height: 0.05em;
-
-  background: currentColor;
+  background: #d9d9d9;
+  width: 100%;
 }
