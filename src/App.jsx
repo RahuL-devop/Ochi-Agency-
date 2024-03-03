@@ -15,8 +15,8 @@ const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
   return (
     <>
-      <div className="min-h-screen w-full bg-zinc-900 text-white ">
-        <Navbar className=" bg-zinc-900 " />
+      <div className="w-full min-h-screen overflow-hidden text-white bg-zinc-900">
+        <Navbar className=" bg-zinc-900" />
         <Landing />
         <Marquee />
         <About />
