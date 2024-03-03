@@ -32,6 +32,7 @@
 .Nav__link:hover::after {
   /* Apply transform scale when hovering */
   transform: scaleX(1);
+  transform: translateY(-150%);
 }
 
 .Nav__linkk {
