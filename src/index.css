@@ -33,3 +33,9 @@
   /* Apply transform scale when hovering */
   transform: scaleX(1);
 }
+
+@media (max-widthh: 640px) {
+  .RiMenu3Fill {
+    display: block;
+  }
+}
