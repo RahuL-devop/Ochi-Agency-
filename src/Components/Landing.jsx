@@ -10,7 +10,7 @@ const Landing = () => {
         data-scroll-speed="-0.3"
         className="h-screen w-full bg-zinc-900 py-[1px]"
       >
-        <div className=" textStructure mt-10 px-4 md:mt-[10.5rem]  md:px-12">
+        <div className=" textStructure mt-10 px-4 md:mt-[10.5rem] md:px-12">
           {["We create", "eye-opening", "Presentations"].map((e, i) => {
             return (
               <div key={i} className="overflow-hidden masker">
