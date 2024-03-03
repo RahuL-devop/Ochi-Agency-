@@ -32,7 +32,6 @@ const Navbar = () => {
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
             (e, i) => (
               <motion.a
-                whileHover={{}}
                 className={`Nav__link neue cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
                 key={i}
               >
