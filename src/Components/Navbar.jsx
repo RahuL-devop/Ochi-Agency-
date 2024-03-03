@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "../assets/Loogo";
-// import Menu from "./Menu";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
+// import Menu from "./Menu";
 const Navbar = () => {
   return (
     <>
