@@ -34,19 +34,19 @@ const Navbar = () => {
               <>
                 <div key={i} className="relative">
                   <motion.a
-                    className={`Nav__link neue block cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
+                    className={`Nav__link neue relative block cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
                     key={i}
                   >
                     {e}
                   </motion.a>
                 </div>
 
-                <motion.a
+                {/* <motion.a
                   className={`Nav__link neue absolute top-0  translate-y-[125%] cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
                   key={i}
                 >
                   {e}
-                </motion.a>
+                </motion.a> */}
               </>
             ),
           )}
