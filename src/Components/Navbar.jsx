@@ -28,7 +28,8 @@ const Navbar = () => {
         className="Navbar sticky top-0 z-[9999] flex w-full items-center justify-between px-12 py-4 backdrop-blur-sm"
       >
         <Logo />
-        <motion.div className="flex gap-8">
+        <motion.div className="flex gap-8
+        ">
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
             (e, i) => (
               <motion.a
