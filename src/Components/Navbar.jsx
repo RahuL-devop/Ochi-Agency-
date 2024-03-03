@@ -26,9 +26,9 @@ const Navbar = () => {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="Navbar sticky top-0 z-[9999] flex w-full flex-col items-center justify-between px-12 py-4 backdrop-blur-sm "
+        className="Navbar sticky top-0 z-[9999] flex h-[2vw] w-full flex-col items-center justify-between overflow-hidden bg-red-500 px-12  py-4 backdrop-blur-sm"
       >
-        <motion.div className="flex gap-8 overflow-hidden">
+        <motion.div className="flex gap-8 ">
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
             (e, i) => (
               <motion.a
