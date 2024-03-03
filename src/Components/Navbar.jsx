@@ -6,7 +6,15 @@ import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 const Navbar = () => {
   return (
     <>
-      <div className="Navbar sticky z-[9999] flex w-full items-center justify-between px-12 py-4">
+      <motion.div
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "-100%" },
+        }}
+        animate="hidden"
+        transition={{ duration: 0.35, ease:"easeInOut"}}
+        className="Navbar sticky top-0 z-[9999] flex w-full items-center justify-between px-12 py-4"
+      >
         <Logo />
         <div className="flex gap-6">
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
@@ -20,7 +28,7 @@ const Navbar = () => {
             ),
           )}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
