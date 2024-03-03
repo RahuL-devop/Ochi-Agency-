@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Logo from "../assets/Loogo";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
-// import Menu from "./Menu";
 const Navbar = () => {
   const { scrollY } = useScroll();
 
@@ -24,7 +23,7 @@ const Navbar = () => {
           visible: { y: 0 },
           hidden: { y: "-100%" },
         }}
-        animate={hidden ? "hidden " : "visible"}
+        animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
         className="Navbar sticky top-0 z-[9999] flex w-full items-center justify-between px-12 py-4"
       >
