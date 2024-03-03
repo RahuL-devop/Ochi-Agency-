@@ -8,8 +8,10 @@ const Navbar = () => {
 
   const [hidden, setHidden] = useState(false);
 
-  useMotionValueEvent(scrollY, "change", (lat) => console.log(lat));
-
+  useMotionValueEvent(scrollY, "change", (lat) => {
+    const pre = scrollY.getPrevious();
+    console.log("lat :-", lat, "pre:-", pre);
+  });
   return (
     <>
       <motion.div
