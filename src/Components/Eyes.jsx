@@ -17,36 +17,36 @@ const Eyes = () => {
 
   return (
     <>
-      <div className="eyes h-screen w-full overflow-hidden">
+      <div className="w-full h-screen overflow-hidden eyes">
         <div
           data-scroll
           data-scroll-speed="-0.7"
-          className="relative h-full w-full bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')] bg-cover bg-center"
+          className="relative h-full w-full bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')] bg-contain bg-center bg-no-repeat md:bg-cover"
         >
-          <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-10 ">
+          <div className="absolute flex gap-10 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 ">
             <div className="relative flex h-[15vw] w-[15vw] items-center justify-center rounded-full bg-zinc-100 ">
-              <div className="relative flex h-2/3 w-2/3 items-center justify-center rounded-full bg-black ">
+              <div className="relative flex items-center justify-center w-2/3 bg-black rounded-full h-2/3 ">
                 <p className="text-[1.5vw] uppercase">Play</p>
                 <div
                   style={{
                     transform: `translate(-50%, -50%) rotate(${rotate}deg)`,
                   }}
-                  className="line h-15 absolute  left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  className="absolute w-full -translate-x-1/2 -translate-y-1/2 line h-15 left-1/2 top-1/2"
                 >
-                  <div className="h-5 w-5 rounded-full bg-white"></div>
+                  <div className="w-4 h-4 bg-white rounded-full md:h-5 md:w-5"></div>
                 </div>
               </div>
             </div>
             <div className="flex h-[15vw] w-[15vw] items-center justify-center rounded-full bg-zinc-100 ">
-              <div className="relative flex h-2/3 w-2/3 items-center  justify-center rounded-full bg-black ">
+              <div className="relative flex items-center justify-center w-2/3 bg-black rounded-full h-2/3 ">
                 <p className="text-[1.5vw] uppercase">Play</p>
                 <div
                   style={{
                     transform: `translate(-50%, -50%) rotate(${rotate}deg)`,
                   }}
-                  className="line h-15 absolute  left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                  className="absolute w-full -translate-x-1/2 -translate-y-1/2 line h-15 left-1/2 top-1/2"
                 >
-                  <div className="h-5 w-5 rounded-full bg-white"></div>
+                  <div className="w-4 h-4 bg-white rounded-full md:h-5 md:w-5"></div>
                 </div>
               </div>
             </div>
