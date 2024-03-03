@@ -4,6 +4,8 @@ import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
 // import Menu from "./Menu";
 const Navbar = () => {
+  // const s
+
   const [hidden, setHidden] = useState(false);
 
   return (
