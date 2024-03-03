@@ -28,15 +28,16 @@ const Navbar = () => {
         className="Navbar sticky top-0 z-[9999] flex w-full items-center justify-between px-12 py-4 backdrop-blur-sm"
       >
         <Logo />
-        <motion.div whileHover={{ opacity: 0 }} className="flex gap-6">
+        <motion.div className="flex gap-6">
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
             (e, i) => (
-              <a
+              <motion.a
+                whileHover={{}}
                 className={`neue cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
                 key={i}
               >
                 {e}
-              </a>
+              </motion.a>
             ),
           )}
         </motion.div>
