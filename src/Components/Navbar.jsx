@@ -39,19 +39,15 @@ const Navbar = () => {
               <>
                 <motion.div key={i} className="relative">
                   <motion.a
-                    className={`  Nav__linkk neue relative block cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
+                    className={`Nav__linkk neue relative block cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
                     key={i}
-                    whileHover={{
-                      y: -20,
-                    }}
                   >
                     {e}
                   </motion.a>
 
                   <motion.a
-                    className={` Nav__link neue absolute top-0  translate-y-[125%] cursor-pointer text-[16px] font-light leading-[12px] text-red-500 ${i === 4 && "ml-[12rem]"}`}
+                    className={`Nav__link neue absolute top-0  translate-y-[125%] cursor-pointer text-[16px] font-light leading-[12px] text-red-500 ${i === 4 && "ml-[12rem]"}`}
                     key={i}
-                    initial={{ y: 20 }}
                   >
                     {e}
                   </motion.a>
