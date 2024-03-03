@@ -58,6 +58,11 @@ const Navbar = () => {
             </>
           ))}
         </motion.div>
+
+        {
+          /* Mobile View */
+          open && <div className="w-full h-screen bg-red-500 mobileNav "></div>
+        }
       </motion.div>
     </>
   );
