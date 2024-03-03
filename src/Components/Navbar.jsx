@@ -52,7 +52,6 @@ const Navbar = () => {
                     className={` Nav__link neue absolute top-0  translate-y-[125%] cursor-pointer text-[16px] font-light leading-[12px] text-red-500 ${i === 4 && "ml-[12rem]"}`}
                     key={i}
                     initial={{ y: 20 }}
-                    animate={{ y: 0 }}
                   >
                     {e}
                   </motion.a>
