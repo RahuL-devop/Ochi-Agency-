@@ -24,6 +24,6 @@
   display: block;
   height: 0.05em;
   background: #d9d9d9;
-  transform: scale(0);
-  width: 100%;
+  /* transform: scale(0); */
+  transition-property: transform;
 }
