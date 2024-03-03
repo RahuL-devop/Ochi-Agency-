@@ -36,6 +36,7 @@ const Navbar = () => {
                   <motion.a
                     className={`Nav__link neue relative block cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
                     key={i}
+                    initial={{ y: 0 }}
                     whileHover={{
                       translateY: "-20px",
                     }}
@@ -46,9 +47,8 @@ const Navbar = () => {
                   <motion.a
                     className={`Nav__linkk neue absolute top-0  translate-y-[125%] cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
                     key={i}
-                    whileHover={{
-                      translateY: "-20px",
-                    }}
+                    initial={{ y: 20 }}
+                    whileHover={{ y: 0 }}
                   >
                     {e}
                   </motion.a>
