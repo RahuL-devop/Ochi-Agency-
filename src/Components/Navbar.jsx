@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../assets/Loogo";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
 // import Menu from "./Menu";
 const Navbar = () => {
+  const [hidden, setHidden] = useState(false);
+
   return (
     <>
       <motion.div
@@ -11,8 +13,8 @@ const Navbar = () => {
           visible: { y: 0 },
           hidden: { y: "-100%" },
         }}
-        animate="hidden"
-        transition={{ duration: 0.35, ease:"easeInOut"}}
+        animate={hidden ? "hidden " : "visible"}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
         className="Navbar sticky top-0 z-[9999] flex w-full items-center justify-between px-12 py-4"
       >
         <Logo />
