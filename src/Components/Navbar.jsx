@@ -43,7 +43,7 @@ const Navbar = () => {
         className="Navbar sticky top-0 z-[9999] flex  w-full items-center justify-between overflow-hidden px-4 py-2 backdrop-blur-sm md:px-12 md:py-4"
       >
         <Logo />
-        <Menu className="Hamburgur block cursor-pointer text-[6vw] sm:hidden" />
+        <Menu className="Hamburgur block cursor-pointer text-[6vw] :hidden" />
         <motion.div className="hidden gap-8 lg:flex">
           {navLinks.map((e, i) => (
             <>
