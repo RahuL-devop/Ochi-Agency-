@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="flex w-full h-screen gap-8 px-4 bg-zinc-900 md:px-12">
         <div className="flex h-full w-1/2 flex-col gap-[30vw] font-['Founders_Grotesk_X']">
           <div className="Heading">
-            <h1 className="-mb-5 text-[7.6vw] font-semibold uppercase md:leading-none ">
+            <h1 className="text-[12vw] font-semibold uppercase md:text-[7.6vw] md:leading-none ">
               EYE-
             </h1>
             <h1 className="text-[12vw] font-semibold uppercase md:text-[7.6vw] md:leading-none ">
