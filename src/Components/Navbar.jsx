@@ -8,9 +8,7 @@ const Navbar = () => {
 
   const [hidden, setHidden] = useState(false);
 
-  useEffect(() => {
-    console.log(scrollY);
-  }, [scrollY]);
+  useMotionValueEvent(scrollY, "change", (lat) => console.log(lat));
 
   return (
     <>
