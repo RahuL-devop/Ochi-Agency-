@@ -34,8 +34,8 @@
   transform: scaleX(1);
 }
 
-@media (max-widthh: 640px) {
+@media (max-width: 640px) {
   .RiMenu3Fill {
-    display: block;
+    display: hidden;
   }
 }
