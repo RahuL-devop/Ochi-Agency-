@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../assets/Loogo";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 
 // import Menu from "./Menu";
 const Navbar = () => {
-  // const s
+  const { scrollY } = useScroll();
 
   const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    console.log(scrollY);
+  }, [scrollY]);
 
   return (
     <>
