@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/Loogo";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
-import { RiMenu3Fill } from "react-icons/ri";
+// import { RiMenu3Fill } from "react-icons/ri";
 import Menu from "./partials/Menu";
+
+const navLinks = [
+  "Services",
+  "Our Work",
+  "About us ",
+  "Insights",
+  "Contact us",
+];
 
 const Navbar = () => {
   const { scrollY } = useScroll();
@@ -35,22 +43,20 @@ const Navbar = () => {
         className="Navbar sticky top-0 z-[9999] flex  w-full items-center justify-between overflow-hidden px-4 py-2 backdrop-blur-sm md:px-12 md:py-4"
       >
         <Logo />
-        <Menu className="block cursor-pointer text-[6vw] lg:hidden" />
+        <Menu className="Hamburgur block cursor-pointer text-[6vw] sm:hidden" />
         <motion.div className="hidden gap-8 lg:flex">
-          {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
-            (e, i) => (
-              <>
-                <motion.div key={i} className="relative">
-                  <motion.a
-                    className={`Nav__link neue relative block cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
-                    key={i}
-                  >
-                    {e}
-                  </motion.a>{" "}
-                </motion.div>
-              </>
-            ),
-          )}
+          {navLinks.map((e, i) => (
+            <>
+              <motion.div key={i} className="relative">
+                <motion.a
+                  className={`Nav__link neue relative block cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
+                  key={i}
+                >
+                  {e}
+                </motion.a>{" "}
+              </motion.div>
+            </>
+          ))}
         </motion.div>
       </motion.div>
     </>
