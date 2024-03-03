@@ -13,7 +13,7 @@ const Landing = () => {
         <div className=" textStructure mt-[10.5rem] px-12">
           {["We create", "eye-opening", "Presentations"].map((e, i) => {
             return (
-              <div className="masker overflow-hidden">
+              <div key={i} className="masker overflow-hidden">
                 <div className="flex w-fit items-end">
                   {i === 1 && (
                     <motion.div
@@ -40,7 +40,10 @@ const Landing = () => {
             "From the first pitch to IPO",
           ].map((e, i) => {
             return (
-              <p className="text-md font-light leading-none tracking-tight">
+              <p
+                key={i}
+                className="text-md font-light leading-none tracking-tight"
+              >
                 {e}
               </p>
             );

@@ -54,7 +54,11 @@ const Footer = () => {
               <div className="mt-5">
                 {["Instagram", "Behance", "Facebook", "Linkedin"].map(
                   (e, i) => {
-                    return <a className="block cursor-pointer">{e}</a>;
+                    return (
+                      <a key={i} className="block cursor-pointer">
+                        {e}
+                      </a>
+                    );
                   },
                 )}
               </div>
@@ -86,7 +90,11 @@ const Footer = () => {
                   "Insights",
                   "Contact us",
                 ].map((e, i) => {
-                  return <a className="block cursor-pointer">{e}</a>;
+                  return (
+                    <a key={i} className="block cursor-pointer">
+                      {e}
+                    </a>
+                  );
                 })}
               </div>
             </div>
