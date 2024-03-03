@@ -28,25 +28,28 @@ const Navbar = () => {
         className="Navbar sticky top-0 z-[9999] flex  w-full  items-center justify-between overflow-hidden  px-12  py-4 backdrop-blur-sm"
       >
         <Logo />
-        <motion.div className=" flex gap-8 ">
+        <motion.div className=" flex gap-8 overflow-hidden ">
           {["Services", "Our Work", "About us ", "Insights", "Contact us"].map(
             (e, i) => (
               <>
-                <div key={i} className="relative">
+                <motion.div key={i} className="relative">
                   <motion.a
                     className={`Nav__link neue relative block cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
                     key={i}
                   >
                     {e}
                   </motion.a>
-                </div>
 
-                {/* <motion.a
-                  className={`Nav__link neue absolute top-0  translate-y-[125%] cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
-                  key={i}
-                >
-                  {e}
-                </motion.a> */}
+                  <motion.a
+                    className={`Nav__link neue absolute top-0  translate-y-[125%] cursor-pointer text-[16px] font-light leading-[12px] ${i === 4 && "ml-[12rem]"}`}
+                    key={i}
+                    whileHover={{
+                      y: "-20",
+                    }}
+                  >
+                    {e}
+                  </motion.a>
+                </motion.div>
               </>
             ),
           )}
