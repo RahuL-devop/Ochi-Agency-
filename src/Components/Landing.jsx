@@ -15,7 +15,7 @@ const Landing = ({ open, setopen }) => {
                       initial={{ width: 0 }}
                       animate={{ width: "13vw" }}
                       transition={{ duration: 1, ease: [0.87, 0, 0.13, 1] }}
-                      className={`relative -top-[1.23vw] mr-[0.5vw] h-[11.5vw] w-[12vw] rounded-xl ${open ? "hide-image" : "show-image"}"} bg-cover bg-center md:h-[6.5vw]`}
+                      className={`relative -top-[1.23vw] mr-[0.5vw] h-[11.5vw] w-[12vw] rounded-xl ${open ? "hide-image" : "show-image"} bg-cover bg-center md:h-[6.5vw]`}
                     ></motion.div>
                   )}
                   <h1
