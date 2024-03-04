@@ -14,7 +14,7 @@ const navLinks = [
 
 const Navbar = () => {
   const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(false);
+  const [hidden,  setHidden] = useState(false);
 
   const [open, setOpen] = useState(false);
 
