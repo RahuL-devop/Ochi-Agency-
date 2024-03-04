@@ -81,12 +81,16 @@ const Navbar = ({ open, setOpen }) => {
               variants={{
                 start: {
                   scaleY: 0,
+                  duration: 0.5,
+                  ease: "",
                 },
                 middle: {
                   scaleY: 1,
                 },
                 end: {
                   scaleY: 0,
+                  duration: 0.5,
+                  ease: "",
                 },
               }}
               initial="start"
