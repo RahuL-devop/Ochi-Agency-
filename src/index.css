@@ -42,3 +42,12 @@ body {
 .mobileNav {
   z-index: 9999999999 !important;
 }
+.show-image {
+  background-image: url("https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hide-image {
+  background-image: none;
+}

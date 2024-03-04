@@ -12,11 +12,9 @@ const navLinks = [
   "Contact us",
 ];
 
-const Navbar = ({ open }) => {
+const Navbar = ({ open, setOpen }) => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
-
-  const [open, setOpen] = useState(false);
 
   const toogleMenu = () => {
     setOpen((prev) => !prev);
