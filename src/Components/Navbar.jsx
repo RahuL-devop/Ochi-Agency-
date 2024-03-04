@@ -69,7 +69,7 @@ const Navbar = () => {
 
         {
           /* Mobile View */
-          <div className="fixed top-0 left-0 w-full h-full bg-red-500 mobileNav"></div>
+          <div className="mobileNav fixed left-0 top-0 z-[9999] h-full w-full bg-red-500 p-10"></div>
         }
       </motion.div>
     </>
