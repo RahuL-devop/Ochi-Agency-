@@ -48,8 +48,8 @@ const Landing = () => {
             <div className="rounded-full border-[2px] border-zinc-500 px-5 py-1 text-sm font-light uppercase">
               start the Project
             </div>
-            <div className="round flex h-5 w-5 z-[-1] items-center justify-center rounded-full border-[2px] border-zinc-600 p-4 text-sm">
-              <span className="z-[1] rotate-[45deg]">
+            <div className="round z-[1] flex h-5 w-5 items-center justify-center rounded-full border-[2px] border-zinc-600 p-4 text-sm">
+              <span className="rotate-[45deg]">
                 <FaLongArrowAltUp />
               </span>
             </div>
