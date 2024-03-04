@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Logo from "../assets/Loogo";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 // import { RiMenu3Fill } from "react-icons/ri";
+import { TfiClose } from "react-icons/tfi";
 import Menu from "./partials/Menu";
 
 const navLinks = [
@@ -50,7 +51,8 @@ const Navbar = ({ open, setOpen }) => {
         className="sticky top-0 flex items-center justify-between w-full h-full px-4 py-2 Navbar backdrop-blur-sm md:px-12 md:py-4"
       >
         <Logo />
-        <Menu className="Hamburgur z-[99999]" onClick={() => toogleMenu()} />
+        <Menu className="Hamburgur" onClick={() => toogleMenu()} />
+        {open && <TfiClose />}
         <motion.div className="hidden gap-8 lg:flex">
           {navLinks.map((e, i) => (
             <>
