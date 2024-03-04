@@ -118,7 +118,7 @@ const Navbar = ({ open, setOpen }) => {
                       className="navlink text-[8vw]"
                       key={index}
                     >
-                      {item}
+                      <div className="overflow-y-hidden">{item}</div>
                     </motion.div>
                   </div>
                 );
