@@ -14,13 +14,12 @@ import LocomotiveScroll from "locomotive-scroll";
 const App = () => {
   const [open, setOpen] = useState(false);
   const locomotiveScroll = new LocomotiveScroll();
-    console.log("open in Navbar:", open);
-
+  console.log("open in App:", open);
   return (
     <>
       <div className="w-full min-h-screen overflow-hidden text-white bg-zinc-900">
         <Navbar className=" bg-zinc-900" open={open} setOpen={setOpen} />
-        <Landing />
+        <Landing open={open} setOpen={setOpen} />
         <Marquee />
         <About />
         <Eyes />
