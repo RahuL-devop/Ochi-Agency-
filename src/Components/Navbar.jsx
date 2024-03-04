@@ -12,7 +12,7 @@ const navLinks = [
   "Contact us",
 ];
 
-const Navbar = () => {
+const Navbar = ({ open }) => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
 
