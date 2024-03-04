@@ -4,7 +4,7 @@ import { FaLongArrowAltUp } from "react-icons/fa";
 const Landing = ({ open, setopen }) => {
   return (
     <>
-      <div className="z-[-1] min-h-[100vh] w-full bg-zinc-900 py-[1px]">
+      <div className="min-h-[100vh] w-full bg-zinc-900 py-[1px]">
         <div className=" textStructure mt-10 px-4 md:mt-[10.5rem] md:px-12">
           {["We create", "eye-opening", "Presentations"].map((e, i) => {
             return (
@@ -48,9 +48,9 @@ const Landing = ({ open, setopen }) => {
             <div className="rounded-full border-[2px] border-zinc-500 px-5 py-1 text-sm font-light uppercase">
               start the Project
             </div>
-            <div className="round  flex h-5 w-5 items-center justify-center rounded-full border-[2px] border-zinc-600 p-4 text-sm">
+            <div className="round flex h-5 w-5 items-center justify-center rounded-full border-[2px] border-zinc-600 p-4 text-sm">
               <span className="rotate-[45deg]">
-                <FaLongArrowAltUp />
+                {open ? "" : <FaLongArrowAltUp />}
               </span>
             </div>
           </div>
