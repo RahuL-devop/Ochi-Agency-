@@ -19,7 +19,7 @@ const Menu = ({ onClick }) => {
       <motion.button
         initial={false}
         onClick={handleButtonClick}
-        className="relative block h-10 w-10 cursor-pointer rounded-full border-none text-[6vw] outline-none transition-colors lg:hidden"
+        className="relative  z-[999] block h-10 w-10 cursor-pointer rounded-full border-none text-[6vw] outline-none transition-colors lg:hidden"
         animate={active ? "open" : "closed"}
       >
         <motion.span
@@ -29,7 +29,7 @@ const Menu = ({ onClick }) => {
             x: "-50%",
             y: "-50%",
           }}
-          className=" first absolute h-[1px] w-[25px] bg-white "
+          className=" first absolute z-[999] h-[1px] w-[25px] bg-white "
           variants={{
             open: {
               rotate: ["0deg", "0deg", "45deg"],
@@ -49,7 +49,7 @@ const Menu = ({ onClick }) => {
             x: "-50%",
             y: "-50%",
           }}
-          className="second absolute h-[1px] w-[25px] bg-white"
+          className="second absolute z-[999] h-[1px] w-[25px] bg-white"
           variants={{
             open: {
               rotate: ["0deg", "0deg", "-45deg"],
