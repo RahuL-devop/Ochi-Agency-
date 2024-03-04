@@ -45,13 +45,13 @@ const Navbar = () => {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="sticky top-0 flex items-center justify-between w-full px-4 py-2 Navbar backdrop-blur-sm md:px-12 md:py-4"
+        className="Navbar sticky top-0 flex h-[100vh] w-full items-center justify-between px-4 py-2 backdrop-blur-sm md:px-12 md:py-4"
       >
         <Logo />
-        <Menu
+        {/* <Menu
           className="Hamburgur block cursor-pointer text-[6vw] sm:hidden"
           onClick={() => toogleMenu()}
-        />
+        /> */}
         <motion.div className="hidden gap-8 lg:flex">
           {navLinks.map((e, i) => (
             <>
@@ -69,9 +69,7 @@ const Navbar = () => {
 
         {
           /* Mobile View */
-          open && (
-            <div className="mobileNav fixed left-0 top-0 h-[100vh] w-full bg-red-500"></div>
-          )
+          <div className="mobileNav fixed left-0 top-0 h-[100vh] w-full bg-red-500"></div>
         }
       </motion.div>
     </>
