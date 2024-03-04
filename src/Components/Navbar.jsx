@@ -102,15 +102,24 @@ const Navbar = ({ open, setOpen }) => {
               {open && (
                 <TfiClose
                   onClick={() => toogleMenu()}
-                  className="absolute right-0 top-0 mr-4 mt-4 text-[6.5vw]  "
+                  className="absolute right-0 top-0 mr-4 mt-4 text-[6.5vw]"
                 />
               )}
               {navLinks.map((item, index) => {
                 return (
                   <div className="mobNav_links ">
-                    <div className="navlink text-[8vw]" key={index}>
+                    <motion.div
+                      variants={{
+                        initial: { y: "30vh", transition: {} },
+                        open: { y: 0 },
+                      }}
+                      initial="initial"
+                      animate="open"
+                      className="navlink text-[8vw]"
+                      key={index}
+                    >
                       {item}
-                    </div>
+                    </motion.div>
                   </div>
                 );
               })}
