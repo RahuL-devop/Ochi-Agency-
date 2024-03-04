@@ -69,15 +69,15 @@ const Navbar = () => {
 
         {
           /* Mobile View */
-          // <div className="mobileNav fixed left-0 top-0 z-[9999] min-h-[100vh] w-full bg-red-500 p-10">
-          //   {navLinks.map((item, index) => {
-          //     return (
-          //       <>
-          //         <div key={index}>{item}</div>
-          //       </>
-          //     );
-          //   })}
-          // </div>
+          <div className="mobileNav fixed left-0 top-0 z-[9999] min-h-[100vh] w-full bg-red-500 p-10">
+            {navLinks.map((item, index) => {
+              return (
+                <>
+                  <div key={index}>{item}</div>
+                </>
+              );
+            })}
+          </div>
         }
       </motion.div>
     </>
