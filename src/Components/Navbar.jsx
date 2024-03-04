@@ -32,7 +32,10 @@ const Navbar = () => {
     // console.log("latestValue :-", latestValue, "preiousValue:-", preiousValue);
     if (latestValue > preiousValue) {
       setHidden(true);
+
+      console.log("hidden");
     } else {
+      console.log("nnothidden");
       setHidden(false);
     }
   });
