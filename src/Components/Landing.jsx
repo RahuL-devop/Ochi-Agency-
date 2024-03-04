@@ -15,7 +15,7 @@ const Landing = () => {
                       initial={{ width: 0 }}
                       animate={{ width: "13vw" }}
                       transition={{ duration: 1, ease: [0.87, 0, 0.13, 1] }}
-                      className="relative -top-[1.23vw] z-[1] mr-[0.5vw] h-[11.5vw] w-[12vw] rounded-xl bg-[url('https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg')] bg-cover bg-center md:h-[6.5vw] "
+                      className="relative -top-[1.23vw] z-[-1] mr-[0.5vw] h-[11.5vw] w-[12vw] rounded-xl bg-[url('https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg')] bg-cover bg-center md:h-[6.5vw] "
                     ></motion.div>
                   )}
                   <h1
@@ -47,7 +47,7 @@ const Landing = () => {
             <div className="rounded-full border-[2px] border-zinc-500 px-5 py-1 text-sm font-light uppercase">
               start the Project
             </div>
-            <div className="round  flex h-5 w-5  items-center justify-center rounded-full border-[2px] border-zinc-600 p-4 text-sm">
+            <div className="round flex h-5 w-5  items-center justify-center rounded-full border-[2px] border-zinc-600 p-4 text-sm">
               <span className="z-[1] rotate-[45deg]">
                 <FaLongArrowAltUp />
               </span>
