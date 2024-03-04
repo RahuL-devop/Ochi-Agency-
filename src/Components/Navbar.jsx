@@ -51,7 +51,7 @@ const Navbar = () => {
         className="sticky top-0 flex items-center justify-between w-full h-full px-4 py-2 Navbar backdrop-blur-sm md:px-12 md:py-4"
       >
         <Logo />
-        <Menu className="Hamburgur " onClick={() => toogleMenu()} />
+        <Menu className="Hamburgur" onClick={() => toogleMenu()} />
         <motion.div className="hidden gap-8 lg:flex">
           {navLinks.map((e, i) => (
             <>
