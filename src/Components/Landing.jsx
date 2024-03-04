@@ -34,7 +34,7 @@ const Landing = () => {
             );
           })}
         </div>
-        <div className="thin_line mt-5 flex flex-col items-center  justify-between border-t-[1px] border-zinc-800 px-12 py-4 md:mt-[4rem] md:flex-row">
+        <div className="thin_line mt-5 flex flex-col items-center justify-between border-t-[1px] border-zinc-800 px-12 py-4 md:mt-[4rem] md:flex-row">
           {[
             "For public and private companies",
             "From the first pitch to IPO",
