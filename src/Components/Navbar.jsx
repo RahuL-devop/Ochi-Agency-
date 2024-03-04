@@ -68,7 +68,7 @@ const Navbar = ({ open, setOpen }) => {
         {
           /* Mobile View */
           open && (
-            <div className="mobileNav fixed left-0 top-0 z-[9999999999] min-h-[100vh] w-full bg-red-500 p-10">
+            <div className="mobileNav fixed left-0 top-0 z-[9] min-h-[100vh] w-full bg-red-500 p-10">
               {navLinks.map((item, index) => {
                 return (
                   <>
