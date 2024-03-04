@@ -39,3 +39,6 @@ body {
   height: 100vh;
   width: 100%;
 }
+.mobileNav {
+  z-index: 9999999999 !important;
+}
