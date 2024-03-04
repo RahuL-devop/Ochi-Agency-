@@ -19,7 +19,7 @@ const Menu = ({ onClick }) => {
       <motion.button
         initial={false}
         onClick={handleButtonClick}
-        className="relative w-10 h-10 transition-colors border-none rounded-full outline-none"
+        className="relative block h-10 w-10 cursor-pointer rounded-full border-none text-[6vw] outline-none transition-colors sm:hidden"
         animate={active ? "open" : "closed"}
       >
         <motion.span
