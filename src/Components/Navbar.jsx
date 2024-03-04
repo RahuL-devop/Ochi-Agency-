@@ -49,7 +49,7 @@ const Navbar = () => {
       >
         <Logo />
         <Menu
-          className="Hamburgur z-[9999] block cursor-pointer text-[6vw] sm:hidden"
+          className="Hamburgur block cursor-pointer text-[6vw] sm:hidden"
           onClick={() => toogleMenu()}
         />
         <motion.div className="hidden gap-8 lg:flex">
