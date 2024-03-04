@@ -83,7 +83,7 @@ const Navbar = ({ open, setOpen }) => {
                 start: {
                   scaleY: 0,
                   duration: 0.5,
-                  ease: "0.87,2,0.13,1",
+                  ease: "0.16, 1, 0.3, 1",
                 },
                 middle: {
                   scaleY: 1,
@@ -91,7 +91,7 @@ const Navbar = ({ open, setOpen }) => {
                 end: {
                   scaleY: 0,
                   duration: 0.5,
-                  ease: "0.87,2,0.13,1",
+                  ease: "0.12, 0, 0.39, 0",
                 },
               }}
               initial="start"
