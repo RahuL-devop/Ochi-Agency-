@@ -14,7 +14,7 @@ const navLinks = [
 
 const Navbar = () => {
   const { scrollY } = useScroll();
-  const [hidden,  setHidden] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
   const [open, setOpen] = useState(false);
 
@@ -73,7 +73,7 @@ const Navbar = () => {
         {
           /* Mobile View */
           open && (
-            <div className="mobileNav fixed left-0 top-0 z-[9999] min-h-[100vh] w-full bg-red-500 p-10">
+            <div className="mobileNav fixed left-0 top-0 z-[9999999999] min-h-[100vh] w-full bg-red-500 p-10">
               {navLinks.map((item, index) => {
                 return (
                   <>
