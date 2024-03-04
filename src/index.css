@@ -33,3 +33,14 @@
   /* Apply transform scale when hovering */
   transform: scaleX(1);
 }
+
+html,
+body {
+  height: 100vh;
+}
+
+.mobileNav {
+  height: 100vh;
+  z-index: 9999;
+  /* ... other styles */
+}
