@@ -15,7 +15,7 @@ const Landing = ({ open, setopen }) => {
                       initial={{ width: 0 }}
                       animate={{ width: "13vw" }}
                       transition={{ duration: 1, ease: [0.87, 0, 0.13, 1] }}
-                      className={` mb-3 mr-[0.5vw] h-[11.5vw] w-[12vw] rounded-xl ${open ? "hide-image" : "show-image"} bg-cover bg-center md:h-[6.5vw]`}
+                      className={` mb-[2vw] mr-[0.5vw] h-[11.5vw] w-[12vw] rounded-xl md:mb-[1.5vw] ${open ? "hide-image" : "show-image"} bg-cover bg-center md:h-[6.5vw]`}
                     ></motion.div>
                   )}
                   <h1
@@ -48,7 +48,7 @@ const Landing = ({ open, setopen }) => {
             <div className="rounded-full border-[2px] border-zinc-500 px-5 py-1 text-sm font-light uppercase">
               start the Project
             </div>
-            <div className="round z-[1] flex h-5 w-5 items-center justify-center rounded-full border-[2px] border-zinc-600 p-4 text-sm">
+            <div className="round  flex h-5 w-5 items-center justify-center rounded-full border-[2px] border-zinc-600 p-4 text-sm">
               <span className="rotate-[45deg]">
                 <FaLongArrowAltUp />
               </span>
