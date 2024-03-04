@@ -4,7 +4,7 @@ import { FaLongArrowAltUp } from "react-icons/fa";
 const Landing = () => {
   return (
     <>
-      <div className="min-h-[100vh] w-full bg-zinc-900 py-[1px]">
+      <div className="z-[-1] min-h-[100vh] w-full bg-zinc-900 py-[1px]">
         <div className=" textStructure mt-10 px-4 md:mt-[10.5rem] md:px-12">
           {["We create", "eye-opening", "Presentations"].map((e, i) => {
             return (
