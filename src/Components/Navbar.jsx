@@ -78,11 +78,12 @@ const Navbar = ({ open, setOpen }) => {
         <AnimatePresence>
           {open && (
             <motion.div
+              //  ease: [0.87, 0, 0.13, 1]
               variants={{
                 start: {
                   scaleY: 0,
                   duration: 0.5,
-                  ease: "",
+                  ease: "0.87,2,0.13,1",
                 },
                 middle: {
                   scaleY: 1,
@@ -90,7 +91,7 @@ const Navbar = ({ open, setOpen }) => {
                 end: {
                   scaleY: 0,
                   duration: 0.5,
-                  ease: "",
+                  ease: "0.87,2,0.13,1",
                 },
               }}
               initial="start"
