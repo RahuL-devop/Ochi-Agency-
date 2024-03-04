@@ -78,7 +78,7 @@ const Navbar = ({ open, setOpen }) => {
         <AnimatePresence>
           {open && (
             <motion.div
-              //  ease: [0.87, 0, 0.13, 1]
+             
               variants={{
                 start: {
                   scaleY: 0,
@@ -97,7 +97,7 @@ const Navbar = ({ open, setOpen }) => {
               initial="start"
               animate="middle"
               exit="end"
-              className="mobileNav fixed left-0 top-0 z-50 flex min-h-[100vh] w-full origin-top flex-col items-center justify-center gap-12  bg-[#5d5e5b] p-10"
+              className="mobileNav fixed left-0 top-0 z-50 flex min-h-[100vh] w-full origin-top flex-col items-center justify-center gap-12 bg-[#5d5e5b] p-10"
             >
               {open && (
                 <TfiClose
