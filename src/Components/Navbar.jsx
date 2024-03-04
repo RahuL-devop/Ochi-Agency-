@@ -73,7 +73,23 @@ const Navbar = ({ open, setOpen }) => {
         {
           /* Mobile View */
           open && (
-            <div className="mobileNav fixed left-0 top-0 z-50 flex min-h-[100vh] w-full flex-col items-center justify-center gap-12  bg-[#5d5e5b] p-10">
+            <motion.div
+              variants={{
+                start: {
+                  scaleY: 0,
+                },
+                middle: {
+                  scaleY: 1,
+                },
+                end: {
+                  scaleY: 0,
+                },
+              }}
+              initial="start"
+              animate="middle"
+              exit="end"
+              className="mobileNav fixed left-0 top-0 z-50 flex min-h-[100vh] w-full flex-col items-center justify-center gap-12  bg-[#5d5e5b] p-10"
+            >
               {open && (
                 <TfiClose
                   onClick={() => toogleMenu()}
@@ -89,7 +105,7 @@ const Navbar = ({ open, setOpen }) => {
                   </div>
                 );
               })}
-            </div>
+            </motion.div>
           )
         }
       </motion.div>
