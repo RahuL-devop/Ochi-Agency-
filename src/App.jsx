@@ -14,6 +14,8 @@ import LocomotiveScroll from "locomotive-scroll";
 const App = () => {
   const [open, setOpen] = useState(false);
   const locomotiveScroll = new LocomotiveScroll();
+    console.log("open in Navbar:", open);
+
   return (
     <>
       <div className="w-full min-h-screen overflow-hidden text-white bg-zinc-900">

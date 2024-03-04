@@ -13,7 +13,7 @@ const navLinks = [
 ];
 
 const Navbar = ({ open, setOpen }) => {
-  console.log("open", open);
+  console.log("open in Navbar:", open);
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
 

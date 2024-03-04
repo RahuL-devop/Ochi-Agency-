@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { FaLongArrowAltUp } from "react-icons/fa";
 const Landing = ({ open, setopen }) => {
-  console.log("open", open);
+  console.log("open in landing:", open);
   return (
     <>
       <div className="min-h-[100vh] w-full bg-zinc-900 py-[1px]">
