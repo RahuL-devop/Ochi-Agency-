@@ -73,7 +73,7 @@ const Navbar = ({ open, setOpen }) => {
         {
           /* Mobile View */
           open && (
-            <div className="mobileNav fixed left-0 top-0 z-50 flex min-h-[100vh] w-full flex-col items-center justify-center gap-12  bg-red-500 p-10">
+            <div className="mobileNav fixed left-0 top-0 z-50 flex min-h-[100vh] w-full flex-col items-center justify-center gap-12  bg-[#5d5e5b] p-10">
               {open && (
                 <TfiClose
                   onClick={() => toogleMenu()}
@@ -83,7 +83,7 @@ const Navbar = ({ open, setOpen }) => {
               {navLinks.map((item, index) => {
                 return (
                   <div className="mobNav_links ">
-                    <div className="navlink text-[5vw]" key={index}>
+                    <div className="navlink text-[8vw]" key={index}>
                       {item}
                     </div>
                   </div>
