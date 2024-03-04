@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/Loogo";
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useMotionValueEvent,
+  useScroll,
+} from "framer-motion";
 import { RiMenu3Fill } from "react-icons/ri";
 import { TfiClose } from "react-icons/tfi";
 import Menu from "./partials/Menu";
@@ -70,9 +75,8 @@ const Navbar = ({ open, setOpen }) => {
             </>
           ))}
         </motion.div>
-        {
-          /* Mobile View */
-          open && (
+        <AnimatePresence>
+          {open && (
             <motion.div
               variants={{
                 start: {
@@ -88,12 +92,12 @@ const Navbar = ({ open, setOpen }) => {
               initial="start"
               animate="middle"
               exit="end"
-              className="mobileNav fixed left-0 top-0 z-50 flex min-h-[100vh] w-full flex-col items-center justify-center gap-12  bg-[#5d5e5b] p-10"
+              className="mobileNav fixed left-0 top-0 z-50 flex min-h-[100vh] w-full origin-top flex-col items-center justify-center gap-12  bg-[#5d5e5b] p-10"
             >
               {open && (
                 <TfiClose
                   onClick={() => toogleMenu()}
-                  className="absolute right-0 top-0  mr-4 mt-4 text-[6.5vw]  "
+                  className="absolute right-0 top-0 mr-4 mt-4 text-[6.5vw]  "
                 />
               )}
               {navLinks.map((item, index) => {
@@ -106,8 +110,8 @@ const Navbar = ({ open, setOpen }) => {
                 );
               })}
             </motion.div>
-          )
-        }
+          )}
+        </AnimatePresence>
       </motion.div>
     </>
   );
