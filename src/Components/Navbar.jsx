@@ -42,16 +42,16 @@ const Navbar = ({ open, setOpen }) => {
     <>
       <motion.div
         variants={{
-          visible: { opacity: 1 },
-          hidden: { opacity: 0 },
+          visible: { y: "0" },
+          hidden: { y: "-100%" },
         }}
         animate={hidden ? "hidden" : "visible"}
-        // transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="sticky top-0 flex items-center justify-between w-full h-full px-4 py-2 Navbar backdrop-blur-sm md:px-12 md:py-4"
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className="sticky top-0 flex items-center justify-between w-full px-4 py-2 Navbar backdrop-blur-sm md:px-12 md:py-4"
       >
         <Logo />
         <RiMenu3Fill
-          className="menu cursor-pointer text-[6.5vw]"
+          className="menu block cursor-pointer text-[6.5vw] lg:hidden"
           onClick={() => toogleMenu()}
         />
         <motion.div className="hidden gap-8 lg:flex">
@@ -99,7 +99,7 @@ const Navbar = ({ open, setOpen }) => {
               )}
               {navLinks.map((item, index) => {
                 return (
-                  <div key={index} className="mobNav_links ">
+                  <div className="mobNav_links ">
                     <motion.div
                       variants={{
                         initial: { y: "30vh", transition: {} },
