@@ -34,9 +34,7 @@ const Navbar = ({ open, setOpen }) => {
 
     if (latestValue > preiousValue) {
       setHidden(true);
-      console.log("hidden:", hidden);
     } else {
-      console.log("hidden:", hidden);
       setHidden(false);
     }
   });
@@ -44,15 +42,14 @@ const Navbar = ({ open, setOpen }) => {
     <>
       <motion.div
         variants={{
-          visible: { y: 0 },
-          hidden: { y: "-100%" },
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
         }}
         animate={hidden ? "hidden" : "visible"}
-        transition={{ duration: 0.35, ease: "easeInOut" }}
+        // transition={{ duration: 0.35, ease: "easeInOut" }}
         className="sticky top-0 flex items-center justify-between w-full h-full px-4 py-2 Navbar backdrop-blur-sm md:px-12 md:py-4"
       >
         <Logo />
-        {/* <Menu className="Hamburgur" onClick={() => toogleMenu()} /> */}
         <RiMenu3Fill
           className="menu cursor-pointer text-[6.5vw]"
           onClick={() => toogleMenu()}
@@ -102,7 +99,7 @@ const Navbar = ({ open, setOpen }) => {
               )}
               {navLinks.map((item, index) => {
                 return (
-                  <div className="mobNav_links ">
+                  <div key={index} className="mobNav_links ">
                     <motion.div
                       variants={{
                         initial: { y: "30vh", transition: {} },
