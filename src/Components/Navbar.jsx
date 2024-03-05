@@ -31,13 +31,11 @@ const Navbar = ({ open, setOpen }) => {
       console.log("open");
     }
   };
-
   useMotionValueEvent(scrollY, "change", (latestValue) => {
     const preiousValue = scrollY.getPrevious();
     // console.log("latestValue :-", latestValue, "preiousValue:-", preiousValue);
     if (latestValue > preiousValue) {
       setHidden(true);
-
       console.log("hidden");
     } else {
       console.log("nnothidden");
@@ -78,7 +76,6 @@ const Navbar = ({ open, setOpen }) => {
         <AnimatePresence>
           {open && (
             <motion.div
-             
               variants={{
                 start: {
                   scaleY: 0,
