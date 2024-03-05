@@ -19,26 +19,24 @@ const navLinks = [
 ];
 
 const Navbar = ({ open, setOpen }) => {
-  console.log("open in Navbar:", open);
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
 
   const toogleMenu = () => {
     setOpen((prev) => !prev);
     if (open) {
-      console.log("close");
     } else {
-      console.log("open");
     }
   };
   useMotionValueEvent(scrollY, "change", (latestValue) => {
     const preiousValue = scrollY.getPrevious();
     // console.log("latestValue :-", latestValue, "preiousValue:-", preiousValue);
+
     if (latestValue > preiousValue) {
       setHidden(true);
-      console.log("hidden");
+      console.log("hidden:", hidden);
     } else {
-      console.log("nnothidden");
+      console.log("hidden:", hidden);
       setHidden(false);
     }
   });
